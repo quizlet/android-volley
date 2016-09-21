@@ -30,10 +30,8 @@ repositories {
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion 22
     buildToolsVersion rootProject.ext.buildToolsVersion
-
-    useLibrary 'org.apache.http.legacy'
 }
 
 apply from: 'rules.gradle'
