@@ -32,6 +32,11 @@ repositories {
 android {
     compileSdkVersion 22
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
 }
 
 apply from: 'rules.gradle'
