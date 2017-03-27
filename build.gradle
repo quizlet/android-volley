@@ -19,7 +19,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:$rootProject.ext.androidGradlePlugin"
+        classpath "com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN"
     }
 }
 
@@ -31,7 +31,7 @@ repositories {
 
 android {
     compileSdkVersion 22
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    buildToolsVersion BUILD_TOOLS_VERSION
 }
 
 apply from: 'rules.gradle'
